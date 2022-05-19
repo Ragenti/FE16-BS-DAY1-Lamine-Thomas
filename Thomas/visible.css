@@ -1,0 +1,43 @@
+.touch{
+    /* border: 1px solid yellow; */
+    margin: 10%;
+    /* height: 50pt; */
+    font-size: 14pt;
+    transition-property: font-size 2s;
+
+}
+.Invisible{
+    /* border: 1px solid red; */
+    padding:0;
+    margin:0;
+    /* display: none; */
+    visibility: hidden;
+    height: 16px;
+    width: 100%;
+    font-size: 14px;
+    color: red;
+    transition-property: all 1s;
+    /* transform: scale(.8); */
+}
+hr{
+    margin:0;
+    padding:0;
+}
+.below{
+    visibility:hidden;
+}
+.touch:hover>.Invisible{
+    transition-duration: 1s;
+    /* transform: scale(80) translate(2000%, 0%); */
+    font-size: 18px;
+    height: 25px;
+    visibility:visible;
+    /* display: block; */
+    color:pink;
+}
+.touch:hover>.upper{
+    visibility: hidden;
+}
+.touch:hover>.below{
+    visibility:visible;
+}
